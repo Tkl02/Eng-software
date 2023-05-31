@@ -1,0 +1,12 @@
+version: '3'
+services:
+  bd:
+    build: ./bd
+    ports:
+      - '5432:5432'
+  site:
+    build: ./site
+    ports:
+      - '5000:5000'
+    depends_on:
+      - bd
