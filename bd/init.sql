@@ -1,5 +1,6 @@
-CREATE TABLE users (
+CREATE TABLE usuarios (
   id SERIAL PRIMARY KEY,
-  email VARCHAR(55) NOT NULL,
-  password VARCHAR(55) NOT NULL
+  nome VARCHAR(18) NOT NULL,
+  email VARCHAR(30) NOT NULL,
+  senha VARCHAR(26) NOT NULL
 );
